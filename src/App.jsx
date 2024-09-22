@@ -32,7 +32,7 @@ const App = () => {
   return (
     <div className=' w-[98vw] border-2 border-black border-solid'>
       <div>
-        <h1>Ürünler Sayfası</h1>
+        <h1 className='mx-px font-bold	'>Giyim</h1>
         {productsLoading && <p>...Loading</p>}
       </div>
       <div className='border-2 border-black border-solid' >

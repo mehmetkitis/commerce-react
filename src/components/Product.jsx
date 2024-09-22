@@ -7,7 +7,7 @@ const Product = ({ productsLoading, products, identifyHandler, page, setPage, pa
     return (
         <>
             <div className='flex ' >
-                <div className='w-[10vw]'>
+                <div className='w-[10vw] mx-1'>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam harum saepe numquam quisquam, animi sed illum perspiciatis cumque similique excepturi assumenda. Quaerat mollitia, sapiente reprehenderit maiores ratione porro laborum ut.</p>
                 </div>
                 <div className='flex w-[90vw] m-0 gap-1 flex-wrap justify-start '>
@@ -18,10 +18,15 @@ const Product = ({ productsLoading, products, identifyHandler, page, setPage, pa
                     })}
                 </div>
             </div>
-            <div >
+            <div className='flex justify-end gap-1 border-2 solid border-gray-600 ' >
                 {pages.map((p, index) => {
                     return (
-                        <button className='' onClick={(e) => setPage(e.target.value)} key={index} value={p}>{p + 1}</button>
+                        <>
+                            <button></button>
+                            <button className='border-2 solid border-gray-600 m-px' onClick={(e) => setPage(e.target.value)} key={index} value={p}>{p + 1}</button>
+                            <button></button>
+
+                        </>
                     )
                 })}
             </div>

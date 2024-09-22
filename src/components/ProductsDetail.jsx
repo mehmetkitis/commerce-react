@@ -20,7 +20,7 @@ const ProductsDetail = ({ id }) => {
             <img className='h-[33vw]' src={product?.images?.[0]?.url} />
             <p>{product?.description}</p>
             <p>{product?.price}TL</p>
-            <button onClick={() => { history.push("/paginationRedirect") }}>Geri</button>
+            <button className='border-2 p-1 px-3 rounded-xl m-2 font-bold border-yellow-50 border-solid bg-yellow-300 rounded' onClick={() => { history.push("/paginationRedirect") }}>Geri</button>
         </div>
     )
 }

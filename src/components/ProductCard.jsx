@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const ProductCard = ({ product, identifyHandler }) => {
     const identify = product.id
     return (
-        <div className='w-[17vw] ml-1 border-2 border-black border-solid' >
+        <div className='w-[17vw] ml-1 border-2 border-slate-50 border-solid hover:scale-110 duration-500 rounded' >
             <img className='h-1/2 w-full' src={product?.images[0].url} />
             <h3>{product?.name}</h3>
             <p>{product?.description}</p>
