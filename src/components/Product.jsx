@@ -18,7 +18,7 @@ const Product = ({ productsLoading, products, identifyHandler, page, setPage, pa
                     })}
                 </div>
             </div>
-            <div className='flex justify-end gap-1 border-2 solid border-gray-600 ' >
+            <div className='flex justify-end gap-1  ' >
                 {pages.map((p, index) => {
                     return (
                         <>

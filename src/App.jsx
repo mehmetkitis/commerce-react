@@ -30,12 +30,12 @@ const App = () => {
   }
 
   return (
-    <div className=' w-[98vw] border-2 border-black border-solid'>
+    <div className=' w-[98vw] '>
       <div>
         <h1 className='mx-px font-bold	'>Giyim</h1>
         {productsLoading && <p>...Loading</p>}
       </div>
-      <div className='border-2 border-black border-solid' >
+      <div  >
         <Switch>
           <Route path="/paginationRedirect">
             <Product productsLoading={productsLoading} identifyHandler={identifyHandler} page={page} setPage={setPage} pages={pages} products={products} />
